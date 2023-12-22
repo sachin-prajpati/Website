@@ -1,0 +1,976 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 3</title>
+        <link rel="stylesheet" media="screen and (max-width: 1025px)" href="format.css">
+        <style>
+            *{
+                font-family: 'Roboto', arial, sans-serif;
+            }
+            .first-section{
+               
+                width: 100%;
+                height: 800px;
+                position: relative;
+            }
+            .first-section img{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+            .man{
+                position: fixed;
+                width: 100%;
+                height: 100px;
+                top: 0;
+                display: flex;
+                z-index: 3;
+                background-color: white;
+            }
+            .text{
+                width: 30%;
+                height: 100%;
+            }
+            .div2{
+            
+                width: 70%;
+                height: 100%;
+                position: absolute;
+                left: 30%;
+                top: 0;
+            }
+            .text h1{
+                position: absolute;
+                color: #F7C552;
+                font-size: 30px;
+                top: 25%;
+                left: 10%;
+                margin-top: 0;
+                
+            }
+            .text span{
+                position: absolute;
+                font-size: 22px;
+                color: black;
+                left: 11.2%;
+                top: 32%;
+                font-weight: bolder;
+                
+            }
+            .div2 ul{
+                list-style: none;
+               
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                width: 60%;
+                top: 30%;
+                left: 20%;
+                
+            }
+            .div2 ul li a{
+                text-decoration: none;
+                margin-left: 50px;
+                color: black;
+                text-transform: uppercase;  
+                font-size: 12px;
+            }
+            .woman{
+              
+                width: 100%;
+                height: 700px;
+                position: absolute;
+                top: 12.5%;
+            }
+            .woman h1:nth-child(1){
+               
+                width: 150px ;
+                font-size: 35px;
+                color: coral;
+                position: absolute;
+                top: 20%;
+                left: 35%;
+            }
+            .woman h1:nth-child(2){
+               
+                width: 150px;
+                font-size: 35px;
+                color: #33c1cf;
+                position: absolute;
+                top: 20%;
+                left: 45%;
+            }
+            .woman h1:nth-child(3){
+             
+                width: 150px;
+                font-size: 35px;
+                color: white;
+                font-weight: normal;
+                position: absolute;
+                top: 20%;
+                left: 54%;
+            }
+            .woman p{
+                
+                position: absolute;
+                top: 30%;
+                left: 27%;
+                text-align: center;
+                width: 650px;
+                height: 50px;
+                color: white;
+                font-size: 14px;
+                
+            }
+            .woman button{
+                position: absolute;
+                width: 130px;
+                height: 50px;
+                border-radius: 25px;
+                left: 45%;
+                top: 40%;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .second-section{
+                position: relative;
+                width: 100%;
+                height: 700px;
+              
+            }
+            .second-section img{
+                width: 100%;
+                height: 100%;
+            }
+            .second-section div{
+               
+                width: 270px;
+                height: 500px;
+            }
+            .div1{
+                position: absolute;
+                top: 20%;
+                left: 10%;
+                display: flex;
+                flex-direction: column;
+            }
+            .div1 div{
+                border: 3px solid white;
+                width: 110px;
+                height: 110px;
+                position: absolute;
+                top: 5%;
+                left: 32%;
+                background-color: #F7C552;
+                border-radius: 50%;
+                
+            }
+            .div1 small{
+              
+                position: absolute;
+                top: 35%;
+                font-size: 16px;
+                color: white;
+                left: 25%;
+                width: 150px;
+                text-align: center;
+            }
+           
+            .div1 p{
+               
+                position: absolute;
+                top: 45%;
+                text-align: center;
+                color: white;
+                font-size: 15px;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .div1 hr{
+                width: 100%;
+                position: absolute;
+                top: 42%;
+                
+            }
+            .div1 button{
+                position: absolute;
+                top: 75%;
+                left: 20%;
+                width: 180px;
+                height: 45px;
+                border-radius: 25px;
+                background-color: #33c1cf;
+                color: white;
+                font-weight: bold;
+                font-size: 14px;
+                border: none;
+            }
+            .div1 div img{
+                position: relative;
+                top: 20%;
+                left: 20%;
+                width: 70px;
+                height: 60px;
+            }
+            .div5 div img{
+                position: relative;
+                top: 20%;
+                left: 20%;
+                width: 70px;
+                height: 60px;
+            }
+            .div3 div img{
+                position: relative;
+                top: 20%;
+                left: 20%;
+                width: 70px;
+                height: 60px;
+            }
+            .div4 div img{
+                position: relative;
+                top: 20%;
+                left: 20%;
+                width: 70px;
+                height: 60px;
+            }
+            .div5{
+                position: absolute;
+                top: 20%;
+                left: 31%;
+                display: flex;
+                flex-direction: column;
+
+            }
+            .div5 div{
+                border: 3px solid white;
+                width: 110px;
+                height: 110px;
+                position: absolute;
+                top: 5%;
+                left: 32%;
+                background-color: #F7C552;
+                border-radius: 50%;
+            }
+            .div5 small{
+               
+                position: absolute;
+                top: 35%;
+                font-size: 16px;
+                color: white;
+                left: 25%;
+                width: 150px;
+                text-align: center;
+            }
+           
+            .div5 p{
+              
+                position: absolute;
+                top: 45%;
+                text-align: center;
+                color: white;
+                font-size: 15px;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .div5 hr{
+                width: 100%;
+                position: absolute;
+                top: 42%;
+                
+            }
+            .div5 button{
+                position: absolute;
+                top: 75%;
+                left: 20%;
+                width: 180px;
+                height: 45px;
+                border-radius: 25px;
+                background-color: #33c1cf;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                border: none;
+            }
+            .div3{
+                position: absolute;
+                top: 20%;
+                left: 52%;
+                display: flex;
+                flex-direction: column;
+            }
+            .div3 div{
+                border: 3px solid white;
+                width: 110px;
+                height: 110px;
+                position: absolute;
+                top: 5%;
+                left: 32%;
+                border-radius: 50%;
+                background-color: #F7C552;
+            }
+            .div3 small{
+                
+                position: absolute;
+                top: 35%;
+                font-size: 16px;
+                color: white;
+                left: 25%;
+                width: 150px;
+                text-align: center;
+            }
+           
+            .div3 p{
+              
+                position: absolute;
+                top: 45%;
+                text-align: center;
+                color: white;
+                font-size: 15px;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .div3 hr{
+                width: 100%;
+                position: absolute;
+                top: 42%;
+                
+            }
+            .div3 button{
+                position: absolute;
+                top: 75%;
+                left: 20%;
+                width: 180px;
+                height: 45px;
+                border-radius: 25px;
+                background-color: #33c1cf;
+                color: white;
+                font-weight: bold;
+                font-size: 14px;
+                border: none;
+            }
+            .div4{
+                position: absolute;
+                top: 20%;
+                left: 73%;
+                display: flex;
+                flex-direction: column;
+            }
+            .div4 div{
+                border: 3px solid white;
+                width: 110px;
+                height: 110px;
+                position: absolute;
+                top: 5%;
+                left: 32%;
+                background-color: #F7C552;
+                border-radius: 50%;
+            }
+            .div4 small{
+               
+                position: absolute;
+                top: 35%;
+                font-size: 16px;
+                color: white;
+                left: 25%;
+                width: 150px;
+                text-align: center;
+            }
+           
+            .div4 p{
+               
+                position: absolute;
+                top: 45%;
+                text-align: center;
+                color: white;
+                font-size: 15px;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .div4 hr{
+                width: 100%;
+                position: absolute;
+                top: 42%;
+                
+            }
+            .div4 button{
+                position: absolute;
+                top: 75%;
+                left: 20%;
+                width: 180px;
+                height: 45px;
+                border-radius: 25px;
+                background-color: #33c1cf;
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                border: none;
+            }
+            .third-section{
+                width: 100%;
+                height: 700px;
+               
+                position: relative;
+                display: flex;
+            }
+            .container{
+               
+                width: 35%;
+                height: 100%;
+                background-color: #33c1cf;
+                
+            }
+            .images{
+                
+                width: 65%;
+                height: 100%;
+                position: relative;
+            }
+            .images div:nth-child(1){
+              
+                width: 300px;
+                height: 210px;
+                position: absolute;
+                top: 4%;
+                left: 4%;
+            }
+            .images div:nth-child(2){
+               
+                width: 300px;
+                height: 210px;
+                position: absolute;
+                top: 4%;
+                left: 35.7%;
+            }
+            .images div:nth-child(3){
+                
+                width: 300px;
+                height: 210px;
+                position: absolute;
+                top: 34%;
+                left: 4%;
+            }
+            .images div:nth-child(4){
+              
+                width: 300px;
+                height: 210px;
+                position: absolute;
+                top: 34%;
+                left: 35.7%;
+            }
+            .images div:nth-child(5){
+              
+                width: 300px;
+                height: 210px;
+                position: absolute;
+                top: 64%;
+                left: 4%;
+            }
+            .images div:nth-child(6){
+              
+                width: 300px;
+                height: 210px;
+                position: absolute;
+                top: 64%;
+                left: 35.7%;
+            }
+            .images div:nth-child(1) img{
+                width: 100%;
+                height: 100%;
+            }
+            .images div:nth-child(2) img{
+                width: 100%;
+                height: 100%;
+            }
+            .images div:nth-child(3) img{
+                width: 100%;
+                height: 100%;
+            }
+            .images div:nth-child(4) img{
+                width: 100%;
+                height: 100%;
+            }
+            .images div:nth-child(5) img{
+                width: 100%;
+                height: 100%;
+            }
+            .images div:nth-child(6) img{
+                width: 100%;
+                height: 100%;
+            }
+            .container div{
+               
+                width: 300px;
+                height: 450px;
+                position: absolute;
+                top: 20%;
+                left: 10%;
+                display: flex;
+                flex-direction: column;
+            }
+            .container div h2{
+                font-size: 13px;
+                color: white;
+            }
+            .container div p{
+                color: white;
+                font-size: 14px;
+            }
+            .container div h1{
+                font-size: 20px;
+                color: white;
+            }
+            .container div hr{
+                width: 100%;
+            }
+            .fifth-section{
+                background-color: #F7C552;
+                height: 400px;
+                width: 100%;
+                position: relative;
+            }
+            .fifth-section div{
+                background-color: white;
+                color: gray;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                width: 550px;
+                height: 130px;
+                position: absolute;
+                top: 20%;
+                left: 30%;
+                border-radius: 5px;
+                font-style: italic;
+            }
+            .fifth-section h1{
+               
+                width: 150px;
+                height: 20px;
+                position: absolute;
+                top: 55%;
+                left: 45%;
+                font-size: 15px;
+                text-align: center;
+                color: white;
+            }
+            .fifth-section h2{
+               
+                width: 150px;
+                height: 20px;
+                font-size: 13px;
+                font-weight: normal;
+                position: absolute;
+                top: 61%;
+                text-align: center;
+                left: 45%;
+                color: white;
+            }
+            .sixth-section{
+                border: 1px solid red;
+                width: 100%;
+                height: 600px;
+                position: relative;
+                
+            }
+            .im{
+                width: 100%;
+                height: 100%;
+                border: 1px solid purple;
+            }
+            .im img{
+                width: 100%;
+                height: 100%;
+            }
+            .left{
+               
+                width: 35%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                background-color: black;
+                opacity: 0.4;
+            }
+            .right{
+                
+                width: 65%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 35%;
+            }
+            .left2{
+            
+                width: 35%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+            }
+            .left2 h1{
+                color: white;
+                position: absolute;
+                
+                top: 6%;
+                left: 30%;
+                font-size: 20px;
+
+            }
+            .left2 hr{
+                width: 250px;
+                position: absolute;
+                top: 15%;
+                left: 30%;
+            }
+            .left2 p{
+             
+                width: 320px;
+                color: white;
+                height: 100px;
+                position: absolute;
+                top: 15%;
+                left: 30%;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .left2 button:nth-child(4){
+                position: absolute;
+                top: 45%;
+                left: 30%;
+                width: 300px;
+                height: 45px;
+                font-size: 14px;
+                background-color: white;
+            }
+            .left2 button:nth-child(5){
+                position: absolute;
+                top: 57%;
+                left: 30%;
+                width: 300px;
+                height: 45px;
+                font-size: 14px;
+                background-color: white;
+            }
+            .left2 button:nth-child(6){
+                position: absolute;
+                top: 69%;
+                left: 30%;
+                width: 300px;
+                height: 45px;
+                font-size: 14px;
+                background-color: white;
+            }
+            .left2 button:nth-child(7){
+                position: absolute;
+                top: 81%;
+                left: 30%;
+                width: 300px;
+                height: 45px;
+                font-size: 14px;
+                background-color: white;
+            }
+            .image{
+                
+                position: absolute;
+                width: 700px;
+                height: 300px;
+                top: 15%;
+                left: 7%;
+            }
+            .image img{
+                width: 100%;
+                height: 100%;
+            }
+            .text1{
+              
+                position: absolute;
+                left: 7%;
+                top: 65%;
+                width: 700px;
+                height: 150px;
+                background-color: white;
+            }
+            .text1 h2{
+                
+                position: absolute;
+                font-size: 16px;
+                left: 3%;
+            }
+            .text1 h4{
+              
+                position: absolute;
+                font-size: 12px;
+                top: 15%;
+                left: 3%;
+            }
+            .text1 h4 a{
+                text-decoration: none;
+                color: #33c1cf;
+            }
+            .text1 p{
+                position: absolute;
+                width: 95%;
+                font-size: 14px;
+                height: 60px;
+               
+                left: 3%;
+                top: 35%;
+            }
+            .seventh-section{
+                width: 100%;
+                height: 1000px;
+                position: relative;
+            }
+            .first{
+                width: 100%;
+                height: 350px;
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                background-color: #596065;
+            }
+            .first h1{
+                
+                font-size: 20px;
+                color: white;
+            }
+            .first hr{
+                width: 300px;
+            }
+            .first p{
+              
+                text-align: center;
+                font-size: 14px;
+                color: white;
+            }
+            .first button{
+                width: 200px;
+                height: 40px;
+                background-color: #33c1cf;
+                border: none;
+                border-radius: 25px;
+                color: white;
+
+            }
+            .second{
+                width: 100%;
+                height: 450px;
+                
+                position: absolute;
+                top: 35%;
+            }
+            .second img{
+                width: 100%;
+                height: 100%;
+            }
+            .third{
+                width: 100%;
+               
+                position: absolute;
+                bottom: 0;
+                height: 200px;
+                background-color: #373a3c;
+            }
+            .third h1{
+              
+                position: absolute;
+                top: 25%;
+                left: 12%;
+                font-size: 35px;
+                color: #F7C552;
+            }
+            .third h2{
+             
+                position: absolute;
+                top: 35%;
+                left: 13.5%;
+                color: white;
+            }
+            .third small:nth-child(3){
+                
+                position: absolute;
+                top: 60%;
+                left: 12%;
+                color: white;
+                font-size: 10px;
+            }
+            .third small:nth-child(4){
+              
+                position: absolute;
+                top: 70%;
+                left: 12%;
+                color: white;
+                font-size: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section class="first-section">
+            <img src="Tinker images/banner_bg.jpg" alt="">
+            <section class="man">
+                <div class="text">
+                    <h1>T</h1>
+                    <span>INKER</span>
+                </div>
+                <nav class="div2">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>    
+                    </ul> 
+                </nav>    
+            </section>
+            <section class="woman">
+                <h1>TINKER</h1>
+                <h1>HTML5</h1>
+                <h1>Template</h1>
+                <p>Tinker is a responsive CSS template provided by templatemo site. This design can be <br> applied for any kind of website. Please mention our site to your colleagues. Thank you.</p>
+                <button>Let's Start</button>
+            </section>  
+        </section>
+        <section class="second-section">
+            <img src="Tinker images/about-bg.jpg" alt="">
+            <div class="div1">
+                <div>
+                    <img src="Tinker images/service_icon_01.png" alt="">
+                </div>
+                <small>Smart Notification</small>
+                <hr>
+                <p>Curabitur non risus fringilla libero accumsan molestie et quis justo. Cras aliquam tempor sem, vestibulum facilisis dui. Mauris malesuada porta.</p>
+                <button>Continue Reading</button>
+            </div>
+            <div class="div5">
+                <div>
+                    <img src="Tinker images/service_icon_02.png" alt="">
+                </div>
+                <small>Lovely Web Design</small>
+                <hr>
+                <p>Do NOT re-distribute our template on any template download website. However, you can feel free to use this template for your commercial or non-commercial sites.</p>
+                <button>Continue Reading</button>
+            </div>
+            <div class="div3">
+                <div>
+                    <img src="Tinker images/service_icon_03.png" alt="">
+                </div>
+                <small>24/7 Quick Support</small>
+                <hr>
+                <p>Feel free to talk to us on our Facebook page if you have any kind of question or suggestion. Sed tempor mi quis rhoncus convallis.</p>
+                <button>Continue Reading</button>
+            </div>
+            <div class="div4">
+                <div>
+                    <img src="Tinker images/service_icon_04.png" alt="">
+                </div>
+                <small>One-Click Setup</small>
+                <hr>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent viverra, nunc et mollis fermentum.</p>
+                <button>Continue Reading</button>
+            </div>
+        </section>
+        <section class="third-section">
+            <div class="container">
+                <div>
+                    <h1>OUR GALLARY</h1>
+                    <hr>
+                    <p>In malesuada placerat ligula et bibendum. Aenean eget urna enim. Sed enim ante, bibendum nec dictum ac, gravida ac lectus.</p>
+                    <h2>Show All</h2>
+                    <h2>Branding</h2>
+                    <h2>Graphic</h2>
+                    <h2>Nature</h2>
+                    <h2>Animation</h2>
+
+                </div>
+            </div>
+            <div class="images">
+                <div>
+                    <img src="Tinker images/portfolio_big_item_01.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Tinker images/portfolio_big_item_02.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Tinker images/portfolio_big_item_03.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Tinker images/portfolio_big_item_04.jpg" alt="">
+                </div>  
+                <div>
+                    <img src="Tinker images/portfolio_big_item_05.jpg" alt="">
+                </div>
+                <div>
+                    <img src="Tinker images/portfolio_big_item_06.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="fifth-section">
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, sequi? Iste aut repellendus, impedit dolorum earum et modi suscipit, pariatur ipsa dolores, debitis maxime atque ipsam. Ipsam at accusamus quidem.
+            </div>
+            <h1>George Rich</h1>
+            <h2>Marketing Head</h2>
+           
+        </section>
+        <section class="sixth-section">
+            <div class="im">
+                <img src="Tinker images/blog-bg.jpg" alt="">   
+            </div>
+            <div class="left">    
+            </div>
+            <div class="left2">
+                <h1>OUR BLOG POSTS</h1>
+                <hr>
+                <p>Nam vulputate elementum nulla, sit amet congue ipsum malesuada pretium. Vivamus vel gravida quam.</p>
+                <button>Nulla Eget Convallis Augue</button>
+                <button>Quisque Ultricies Maximus</button>
+                <button>Sed Vel Elit Et Lorem</button>
+                <button>Vivamus Purus Neque</button>
+            </div>
+            <div class="right">
+                <div class="image">
+                    <img src="Tinker images/blog_item_01.jpg" alt="">
+                </div>
+                <div class="text1">
+                    <h2>Nulla Eget Convallis Augue</h2>
+                    <h4><a href="#">Digital Marketing / Honey / 21 September 2020</a></h4>
+                    <p>Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </div>
+            </div>
+        </section>
+        <section class="seventh-section">
+            <div class="first">
+                <h1>CONTACT US</h1>
+                <hr>
+                <p>Nunc posuere non quam at pharetra. Mauris tincidunt purus <br> vel ultrices malesuada. Integer euismod erat ut nulla ultrices, <br> ut auctor eros feugiat.</p>
+                <br>
+                <button>SEND US A MESSAGE</button>
+            </div>
+            <div class="second">
+                <img src="Tinker images/Screenshot 2023-11-18 000613.png" alt="">
+            </div>
+            <div class="third">
+                <h1>T</h1>
+                <h2>INKER</h2>
+                <small>Copyright @ 2020 Your Company</small>
+                <small>Design: TemplateMo</small>
+            </div>
+        </section>
+    </body>
+    </html>

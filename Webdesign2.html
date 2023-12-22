@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troweld Demo</title>
+    <link rel="stylesheet" media="screen and (max-width: 1440px)" href="format.css">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        .first-section{
+            width: 100%;
+            height: 700px;
+
+            background-color: #da7426;
+            position: relative;
+        }
+        .div1{
+         
+            height: 80px;
+            z-index: 1;
+            position: absolute;
+            top: 2%;
+            width: 100%;
+            background-color: #003471;
+        }
+        .div1 h1{
+    
+            width: 50px;
+            position: absolute;
+            left: 0.9%;
+            top: 7%;
+            font-size: 25px;
+            color: white;
+        }
+        .div1 h1:hover{
+            color: black;
+        }
+        .span{
+        
+            width: 100px;
+            position: absolute;
+            top: 32%;
+            font-size: 25px;
+            left: 3.5%;
+            color: #da7426;
+            font-weight: bolder;
+        }
+        .a1{
+            
+            height: 40px;
+            width: 150px;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+        }
+        .a2{
+          
+            height: 40px;
+            width: 250px;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+        }
+        .a3{
+            
+            height: 40px ;
+            width: 200px;
+            position: absolute;
+            top: 20%;
+            left: 65%;
+        }
+        .a4{
+           
+            height: 40px;
+            width: 200px;
+            position: absolute;
+            top: 20%;
+            left: 85%;
+        }
+        .a1 div{
+            
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            left:  10%;
+            top: 10%;
+            background-color: #17a2b8;
+            border-radius: 50%;
+        }
+        .a1 div:hover{
+            background-color: #da7426;
+        }
+        .a1 img{
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 15px;
+            border-radius: 50%;
+            filter: brightness(0) invert(1);
+        }
+        .a1 span{
+           
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            font-weight: normal;
+            color: white;
+            width: 80px;
+        }
+        .a2 div{
+           
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            border-radius: 50%;
+            background-color: #17a2b8;
+        }
+        .a2 div:hover{
+            background-color: #da7426;
+        }
+        .a2 span{
+           
+            position: absolute;
+            top: 30%;
+            left: 20%;
+            color: white;
+            height: 20px;
+            width: 180px;
+        } 
+        .a2 img{
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            border-radius: 50%;
+            filter: brightness(0) invert(1);
+        } 
+        .a3 div{
+           
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10%;
+            left: 5%; 
+            border-radius: 50%;
+            background-color: #17a2b8;
+        }
+        .a3 div:hover{
+            background-color: #da7426;
+        }
+        .a3 div img{
+            width: 18px;
+            position: absolute;
+            top: 20%;
+            left: 18%;
+            border-radius: 50%;
+            filter: brightness(0) invert(1);
+        }
+        .a3 span{
+            position: absolute;
+            top: 30%;
+            left: 23%;
+            color: white;
+        }
+        .a4 div:nth-child(1){
+           
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            background-color: #17a2b8;
+            border-radius: 50%;
+        }
+        .a4 div:nth-child(2){
+         
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10%;
+            left: 30%;
+            background-color: #17a2b8;
+            border-radius: 50%;
+        }
+        .a4 div:nth-child(3){
+          
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            background-color: #17a2b8;
+            border-radius: 50%;
+        }
+        .a4 div:nth-child(4){
+           
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10%;
+            left: 70%;
+            background-color: #17a2b8;
+            border-radius: 50%;
+        }
+        .a4 div:nth-child(1):hover{
+            background-color: #da7426;
+        }
+        .a4 div:nth-child(2):hover{
+            background-color: #da7426;
+        }
+        .a4 div:nth-child(3):hover{
+            background-color: #da7426;
+        }
+        .a4 div:nth-child(4):hover{
+            background-color: #da7426;
+        }
+        .a4 div:nth-child(1) img{
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            filter: brightness(0) invert(1);
+        }
+        .a4 div:nth-child(2) img{
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            filter: brightness(0) invert(1);
+        }
+        .a4 div:nth-child(3) img{
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            filter: brightness(0) invert(1);            
+        }
+        .a4 div:nth-child(4) img{
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            filter: brightness(0) invert(1);
+        }
+        .img1{
+            width: 100%;
+            height: 700px;
+        }
+        .img1 img{
+            height: 685px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        .middle{
+            width: 100%;
+            height: 70px;
+            position: absolute;
+            top: 13%;
+            background-color: black;
+            opacity: 0.6;
+        }
+        .div2{
+            /* border: 1px solid red; */
+            height: 70px;
+            width: 100%;
+            position: absolute;
+            top: 13%;
+            display: block;
+            
+        }
+        .div2 ul{
+            display: flex;
+            position: absolute;
+            left: 20%;
+            top: 20%;
+            font-size: 14px;
+            text-transform: uppercase;
+            list-style: none;
+            
+            
+        }
+        .div2 ul li{
+            margin-left: 50px;
+           
+        }
+        .div2 ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .div2 ul li a:hover{
+            color: #da7426;
+        }
+        .ra{
+            height: 350px;
+            width: 550px;
+            position: absolute;
+            top: 35%;
+            left: 10%;
+        }
+        .ra h1{
+            color: white;
+            font-size: 50px;
+        }
+        .button1{
+            position: absolute;
+            top: 75%;
+            height: 50px;
+            width: 180px;
+            font-size: 15px;
+            background-color: white;
+        }
+        .button1:hover{
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+        .button2{
+            position: absolute;
+            top: 75%;
+            left: 35%;
+            height: 50px;
+            width: 180px;
+            font-size: 15px;
+            background-color: #da7426;
+            color: white;
+        }
+        .button2:hover{
+            background-color: transparent;
+            color: #da7426;
+            border: 1px solid #da7426;
+            cursor: pointer;
+        }
+        .second-section{
+            height: 600px;
+           
+            position: relative;
+        }
+        .second-section h1{
+            
+            width: 240px;
+            height: 50px;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            font-size: 35px;
+        }
+        .second-section span{
+          
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 35.5%;
+            left: 24%;
+            text-align: center;
+            font-size: 35px;
+            font-weight: bolder;
+            color: #da7426;
+
+        }
+        .second-section p{
+        
+            width: 550px;
+            height: 120px;
+            position: absolute;
+            top: 45%;
+            left: 10%;
+            font-size: 17px;
+        }
+        .second-section button{
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            top: 70%;
+            left: 10%;
+            background-color: #da7426;
+            font-size: 15px;
+            border: none;
+            color: white;
+        }
+        .second-section button:hover{
+            background-color: transparent;
+            border: 1px solid #da7426;
+            color: #da7426;
+            cursor: pointer;
+        }
+        .second-section img{
+            position: absolute;
+            top: 20%;
+            left: 55%;
+        }
+        .third-section{
+            height: 600px;
+            
+            background-color: #003471;
+            position: relative;
+        }
+        .third-section h1{
+         
+            height: 50px;
+            width: 350px;
+            position: absolute;
+            top: 5%;
+            left: 35%;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+        .i1{
+            
+            width: 500px;
+            height: 50px;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .third-section div a{
+            list-style: none;
+            text-decoration: none;
+            margin-left: 35px;
+            font-size: 12px;
+           
+            color: white;    
+        }
+        
+      
+        .third-section div a:hover{
+            background-color: white;
+            color: black;
+        }
+        .image1{
+          
+            width: 470px;
+            height: 400px;
+            position: absolute;
+            top: 30%;
+        }
+        .image1 img{
+            width: 470px;
+            height: 400px;
+        }
+        .image2{
+         
+            width: 470px;
+            height: 400px;
+            position: absolute;
+            top: 30%;
+            left: 34%;
+        }
+        .image2 img{
+            width: 470px;
+            height: 400px;
+        }
+        .image3{
+            
+            width: 465px;
+            height: 400px;
+            position: absolute;
+            top: 30%;
+            left: 68%;
+        }
+        .image3 img{
+            width: 465px;
+            height: 400px;
+        }
+        .fourth-section{
+            width: 100%;
+            height: 750px;
+            
+            position: relative;
+        }
+        .fourth-section div{
+            /* border: 1px solid red; */
+            width: 350px;
+            height: 220px;
+        }
+        .fourth-section h1{
+          
+            position: absolute;
+            top: 7%;
+            left: 45%;
+            font-size: 30px;
+        }
+        .fourth-section span{
+          
+            position: absolute;
+            top: 10.5%;
+            left: 49%;
+            font-size: 30px;
+            font-weight: bolder;
+            color: #da7426;
+        }
+        .ab{
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            box-shadow: 0 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .ab1{
+            position: absolute;
+            top: 20%;
+            left: 36%;
+            box-shadow: 0 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .ab2{
+            position: absolute;
+            top: 20%;
+            left: 62%;
+            box-shadow: 0 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .ab3{
+            position: absolute;
+            top: 52%;
+            left: 10%;
+            box-shadow: 0 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .ab4{
+            position: absolute;
+            top: 52%;
+            left: 36%;
+            box-shadow: 0 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .ab5{
+            position: absolute;
+            top: 52%;
+            left: 62%;
+            box-shadow: 0 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .fourth-section button{
+            width: 180px;
+            height: 50px;
+            position: absolute;
+            top: 85%;
+            left: 45%;
+            background-color: #da7426;
+            font-size: 15px;
+            border: none;
+            color: white;
+        }
+        .fourth-section button:hover{
+            background-color: transparent;
+            border: 1px solid #da7426;
+            color: #da7426;
+            cursor: pointer;
+        }
+        .ab img{
+            position: absolute;
+            left: 45%;
+            top: 5%;
+            height: 60px;
+        }
+        .ab1 img{
+            position: absolute;
+            left: 40%;
+            top: 5%;
+            height: 60px;
+        }
+        .ab2 img{
+            position: absolute;
+            left: 40%;
+            top: 5%;
+            height: 60px;
+        }
+        .ab3 img{
+            position: absolute;
+            left: 40%;
+            top: 5%;
+            height: 60px;
+        }
+        .ab4 img{
+            position: absolute;
+            left: 40%;
+            top: 5%;
+            height: 60px;
+        }
+        .ab5 img{
+            position: absolute;
+            left: 40%;
+            top: 5%;
+            height: 60px;
+        }
+        .ab h2{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+        }
+        .ab1 h2{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+        }
+        .ab2 h2{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+        }
+        .ab3 h2{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+        }
+        .ab4 h2{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+        }
+        .ab5 h2{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+        }
+        .ab p{
+            position: absolute;
+            top: 50%;
+            left: 12%;
+            text-align: center;
+        }
+        .ab1 p{
+            position: absolute;
+            top: 50%;
+            left: 12%;
+            text-align: center;
+        }
+        .ab2 p{
+            position: absolute;
+            top: 50%;
+            left: 12%;
+            text-align: center;
+        }
+        .ab3 p{
+            position: absolute;
+            top: 50%;
+            left: 12%;
+            text-align: center;
+        }
+        .ab4 p{
+            position: absolute;
+            top: 50%;
+            left: 12%;
+            text-align: center;
+        }
+        .ab5 p{
+            position: absolute;
+            top: 50%;
+            left: 12%;
+            text-align: center;
+        }
+        .ab:hover{
+            background-color: #da7426;
+            color: white;
+            
+        }
+        .ab img:hover{
+            filter: brightness(0) invert(1);
+        }
+        .ab1:hover{
+            background-color: #da7426;
+            color: white;
+            
+        }
+        .ab1 img:hover{
+            filter: brightness(0) invert(1);
+        }
+        .ab2:hover{
+            background-color: #da7426;
+            color: white;
+            
+        }
+        .ab2 img:hover{
+            filter: brightness(0) invert(1);
+        }
+        .ab3:hover{
+            background-color: #da7426;
+            color: white;
+            
+        }
+        .ab3 img:hover{
+            filter: brightness(0) invert(1);
+        }
+        .ab4:hover{
+            background-color: #da7426;
+            color: white;
+            
+        }
+        .ab4 img:hover{
+            filter: brightness(0) invert(1);
+        }
+        .ab5:hover{
+            background-color: #da7426;
+            color: white;
+            
+        }
+        .ab5 img:hover{
+            filter: brightness(0) invert(1);
+        }
+        .fifth-section{
+            
+            width: 100%;
+            height: 750px;
+            position: relative;
+        }
+        .fifth-section h1{
+          position: absolute;
+          top: 7%;
+          left: 42%;
+          font-size: 35px;
+      }
+      .fifth-section span{
+        
+          position: absolute;
+          top: 10.7%;
+          left: 49.5%;
+          font-size: 35px;
+          font-weight: bolder;
+          color: #da7426;
+      }
+      .main{
+        position: absolute;
+        width: 80%;
+        height: 500px;
+        top: 25%;
+        left: 10%;
+
+      }
+      .ac1{
+        
+        position: absolute;
+        width: 50%;
+        height: 500px;
+        background-color: #003471;
+      }
+      .ac1 input:nth-child(1){
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        height: 45px;
+        width: 500px;
+        font-size: 16px;
+      }
+      .ac1 input:nth-child(2){
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        width: 250px;
+        height: 45px;
+        font-size: 16px;
+      }
+      .ac1 input:nth-child(3){
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        width: 500px;
+        height: 45px;
+        font-size: 16px;
+      }
+      .ac1 input:nth-child(4){
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        width: 500px;
+        height: 100px;
+        font-size: 16px;
+      }
+      .ac1 select{
+        position: absolute;
+        top: 25%;
+        left: 52%;
+        width: 230px;
+        height: 50px;
+        font-size: 16px;
+      }
+      .ac1 button{
+            width: 180px;
+            height: 50px;
+            position: absolute;
+            top: 82%;
+            left: 5%;
+            background-color: #da7426;
+            font-size: 15px;
+            border: none;
+            color: white;
+        }
+        .ac1 button:hover{
+            background-color: transparent;
+            border: 1px solid #da7426;
+            color: #da7426;
+            cursor: pointer;
+        }
+        .ac2{
+            
+            width: 50%;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+        }
+        .ac2 img{
+            height: 500px;
+        }
+        .sixth-section{
+          
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+        .sixth-section h1{
+           
+            position: absolute;
+            top: 5%;
+            left: 43%;
+            font-size: 30px;
+        }
+        .d{
+            border: 7px solid #da7426;
+            position: absolute;
+            width: 130px;
+            height: 140px;
+            top: 40%;
+            left: 25%;
+
+        }
+        .d img{
+            width: 130px;
+            height: 140px;
+        }
+        .p{
+            border: 1px solid black;
+            position: absolute;
+            top: 44%;
+            left: 35%;
+            width: 600px;
+            height: 115px;
+        }
+        .p p{
+            margin-left: 15px;
+            font-size: 17px;
+        }
+        .dot1{
+            position: absolute;
+           
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            left: 80%;
+            border-radius: 50%;
+            background-color: #003471;
+        }
+        .dot2{
+            position: absolute;
+         
+            width: 20px;
+            height: 20px;
+            top: 58%;
+            left: 80%;
+            border-radius: 50%;
+            background-color: #da7426;
+        }
+        .dot3{
+            position: absolute;
+           
+            width: 20px;
+            height: 20px;
+            top: 66%;
+            left: 80%;
+            border-radius: 50%;
+            background-color: #da7426;
+        }
+        .sixth-section h2{
+        
+            position: absolute;
+            top: 75%;
+            left: 25.5%;
+            font-weight: normal;
+        }
+        .image1 div{
+            width: 420px;
+            height: 350px;
+            
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            display: none;
+        }
+        .image2 div{
+            width: 420px;
+            height: 350px;
+            
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            display: none;
+        }
+        .image3 div{
+            width: 420px;
+            height: 350px;
+            
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            display: none;
+        }
+        .image1:hover div{
+            display: block;
+            transition: transform 1s ;
+            background-color: white;
+            opacity: 0.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image2:hover div{
+            display: block;
+            transition: transform 1s ;
+            background-color: white;
+            opacity: 0.8;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image3:hover div{
+            display: block;
+            transition: transform 1s ;
+            background-color: white;
+            opacity: 0.8;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image2:hover div button{
+            color: #da7426;
+            font-size: 15px;
+            width: 170px;
+            height: 45px;
+            border: 1px solid #da7426;
+        }
+        .image3:hover div button{
+            color: #da7426;
+            font-size: 15px;
+            width: 170px;
+            height: 45px;
+            border: 1px solid #da7426;
+        }
+       
+        .image1:hover div button{
+            color: #da7426;
+            font-size: 15px;
+            width: 170px;
+            height: 45px;
+            border: 1px solid #da7426;
+        }
+        .image1:hover div button:hover{
+            background-color: #da7426;
+            color: white;
+            
+        }
+        .image2:hover div button:hover{
+            background-color: #da7426;
+            color: white;
+            
+        }
+        .image3:hover div button:hover{
+            background-color: #da7426;
+            color: white;    
+        }
+
+      
+    </style>
+</head>
+<body>
+    <section class="first-section">
+        <div class="div1">
+            <h1>Tro</h1>
+            <span class="span">Weld</span>
+            <div class="a1">
+                <div>
+                    <img src="icons/location-pin.png" alt="">
+                </div>
+                <span>Location</span>
+            </div>
+            <div class="a2">
+                <div>
+                    <img src="icons/phone-call.png" alt="">
+                </div>
+                <span>
+                    Call:+917000718505
+                </span>
+            </div>
+            <div class="a3">
+                <div>
+                    <img src="icons/email.png" alt="">
+                </div>
+                <span>sachin02102018@gmail.com</span>
+            </div>
+            <div class="a4">
+                <div>
+                    <img src="icons/facebook-app-symbol.png" alt="">
+                </div>
+                <div>
+                    <img src="icons/twitter.png" alt="">
+                </div>
+                <div>
+                    <img src="icons/linkedin.png" alt="">
+                </div>
+                <div>
+                    <img src="icons/instagram.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <img  src="Troweld images/hero-bg.jpg" alt="">
+        </div>
+        <div class="middle">
+
+        </div>
+        <nav class="div2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Login</a></li>
+            </ul> 
+        </nav>
+        <div class="ra">
+            <h1>We Build <br> The Things Architects <br>Dream Up</h1>
+            <button class="button1">Read More</button>
+            <button class="button2">Contact Us</button>
+        </div>
+    </section>
+    <section class="second-section">
+        <h1>Welcome to</h1>
+        <span>Troweld</span>
+        <p>Simply dummy text of the printing and typesetting industry. Lorem <br> Ipsum has been the industry's standard dummy text ever since <br> the 1500s, when an unknown printer took a galley of type and scrambled <br> it to make a type specimen book. It has s</p>
+        <button>Read More</button>
+        <img src="Troweld images/about-img.png" alt="">
+    </section>
+    <section class="third-section">
+        <h1>Our Work Portfolio</h1>
+        <div class="i1">
+            <a href="#">All</a>
+            <a  href="#">Decorative</a>
+            <a  href="#">Facades</a>
+            <a  href="#">Perforated</a>
+            <a  href="#">Railing</a>
+        </div>
+        <div class="image1">
+            <img src="Troweld images/p1.jpg" alt="">
+            <div >
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="image2">
+            <img src="Troweld images/p2.jpg" alt="">
+            <div >
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="image3">
+            <img src="Troweld images/p3.jpg" alt="">
+            <div >
+                <button>See More</button>
+            </div>
+        </div>
+    </section>
+    <section class="fourth-section">
+        <h1>Our</h1><span>Services</span>
+        <div class="ab">
+            <img src="Troweld images/s1.png" alt="">
+            <h2>Home Welding</h2>
+            <p>when looking at its layout. The point of <br> using Lorem Ipsum is that it has a more- <br>or-less normal</p>
+        </div>
+        <div class="ab1">
+            <img src="Troweld images/s2.png" alt="">
+            <h2>Gate Welding</h2>
+            <p>when looking at its layout. The point of <br> using Lorem Ipsum is that it has a more- <br>or-less normal</p>
+        </div>
+        <div class="ab2">
+            <img src="Troweld images/s3.png" alt="">
+            <h2>Window Welding</h2>
+            <p>when looking at its layout. The point of <br>using Lorem Ipsum is that it has a more- <br>or-less normal</p>
+        </div>
+        <div class="ab3">
+            <img src="Troweld images/s4.png" alt="">
+            <h2>Maching Welding</h2>
+            <p>when looking at its layout. The point of <br>using Lorem Ipsum is that it has a more- <br>or-less normal</p>
+        </div>
+        <div class="ab4">
+            <img src="Troweld images/s5.png" alt="">
+            <h2>Bike Welding</h2>
+            <p>when looking at its layout. The point of <br>using Lorem Ipsum is that it has a more- <br>or-less normal</p>
+        </div>
+        <div class="ab5">
+            <img src="Troweld images/s6.png" alt="">
+            <h2>Car Welding</h2>
+            <p>when looking at its layout. The point of <br>using Lorem Ipsum is that it has a more- <br>or-less normal</p>
+        </div>
+        <button>Read More</button>
+    </section>
+    <section class="fifth-section">
+        <h1>Get In</h1><span>Touch</span>
+        <div class="main">
+            <div class="ac1">
+                <input type="name" name="name" id="name" placeholder="Your Name">
+                <input type="number" placeholder="Phone number">
+                <input type="email" placeholder="Email">
+                <input type="text"  placeholder="Message">
+                <select>
+                    <option selected>Select Services</option>
+                    <option>Service 1</option>
+                    <option>Service 2</option>
+                    <option>Service 3</option>  
+                </select>
+                <button>Send</button>
+            </div>
+            <div class="ac2">
+                <img src="Troweld images/Screenshot 2023-11-16 005623.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="sixth-section">
+        <h1>Testimonial</h1>
+        <div class="d">
+            <img src="Troweld images/client.jpg" alt="">
+        </div>
+        <div class="p">
+            <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <br> consequat. Duis aute irure dolor in reprehenderit in voluptate velit</p>
+        </div>
+        <div class="dot1">
+
+        </div>
+        <div class="dot2">
+
+        </div>
+        <div class="dot3">
+
+        </div>
+        <h2>Alex Jonson</h2>
+    </section>
+</body>
+</html>
